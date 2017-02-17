@@ -7,13 +7,13 @@
 ### Install
 
 ```bash
-go get github.com/xuqingfeng/go-tpl
+go get github.com/xuqingfeng/go-tpl/cmd
 ```
 
 ### Usage
 
 ```bash
-go-tpl new
+go-tpl author repo
 ```
 
 ### Test

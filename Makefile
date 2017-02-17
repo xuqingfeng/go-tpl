@@ -8,8 +8,7 @@ fmt:
 	go fmt ./...
 
 build: fmt
-	go build
+	go build -o ./out/go-tpl ./cmd
 
 run: build
-	./go-tpl
-
+	./out/go-tpl
