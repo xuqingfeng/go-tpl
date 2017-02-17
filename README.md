@@ -7,7 +7,7 @@
 ### Install
 
 ```bash
-go get github.com/xuqingfeng/gotpl/cmd
+go get github.com/xuqingfeng/gotpl/cmd/gotpl
 ```
 
 ### Usage
