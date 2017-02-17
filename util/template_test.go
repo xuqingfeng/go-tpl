@@ -6,7 +6,7 @@ func TestFeed(t *testing.T) {
 
 	data := Data{
 		"xuqingfeng",
-		"go-tpl",
+		"gotpl",
 	}
 	fs, err := Feed(data)
 	if err != nil {

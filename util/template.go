@@ -65,11 +65,13 @@ make test
 	}
 )
 
+// Data get input from cli
 type Data struct {
 	Author string
 	Repo   string
 }
 
+// Feed convert template to content
 func Feed(d Data) (map[string]string, error) {
 
 	for name, content := range fs {

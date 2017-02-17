@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/xuqingfeng/go-tpl/util"
+	"github.com/xuqingfeng/gotpl/util"
 )
 
 func main() {
