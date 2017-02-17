@@ -13,7 +13,7 @@ go get github.com/xuqingfeng/gotpl/cmd/gotpl
 ### Usage
 
 ```bash
-gotpl AUTHOR REPO
+gotpl -author AUTHOR -repo REPO
 ```
 
 ### Test
