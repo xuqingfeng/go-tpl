@@ -1,2 +1,2 @@
-// package gotpl include docs
+// demo documents
 package gotpl
