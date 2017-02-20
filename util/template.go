@@ -57,11 +57,22 @@ go get github.com/{{ .Author }}/{{ .Repo }}
 make test
 ` + "```"
 
+	main = `package main
+
+import "fmt"
+
+func main(){
+
+    fmt.Print("Hello, Golang!")
+}
+`
+
 	fs = map[string]string{
 		".gitignore":  gitignore,
 		".travis.yml": travis,
 		"Makefile":    makefile,
 		"README.md":   readme,
+		"main.go":     main,
 	}
 )
 

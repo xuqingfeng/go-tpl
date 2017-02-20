@@ -21,10 +21,10 @@ func main() {
 	}
 	newFs, err := util.Feed(data)
 	if err != nil {
-        log.Fatalf("E! %v", err)
+		log.Fatalf("E! %v", err)
 	}
 	err = util.CreateFile(data, newFs)
 	if err != nil {
-        log.Fatalf("E! %v", err)
+		log.Fatalf("E! %v", err)
 	}
 }
