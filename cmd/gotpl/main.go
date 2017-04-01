@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"github.com/xuqingfeng/gotpl/util"
+	"os"
 )
 
 func main() {
@@ -16,7 +17,9 @@ func main() {
 	flag.Parse()
 
 	if data.Author == "" || data.Repo == "" {
-		log.Fatalln("E! author or repo can't be empty")
+		log.Println("E! author or repo can't be empty")
+		flag.Usage()
+		os.Exit(1)
 	}
 
 	err := util.CreateDirectory(data)
