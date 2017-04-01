@@ -10,10 +10,14 @@ import (
 func main() {
 
 	data := util.Data{}
-	flag.StringVar(&data.Author, "author", "author", "author of the porject")
-	flag.StringVar(&data.Repo, "repo", "repo", "repository name")
+	flag.StringVar(&data.Author, "author", "", "author of the porject")
+	flag.StringVar(&data.Repo, "repo", "", "repository name")
 
 	flag.Parse()
+
+	if data.Author == "" || data.Repo == "" {
+		log.Fatalln("E! author or repo can't be empty")
+	}
 
 	err := util.CreateDirectory(data)
 	if err != nil {
