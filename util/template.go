@@ -13,7 +13,7 @@ out
 `
 	travis = `language: go
 go:
-  - 1.7
+  - 1.8
   - tip
 os:
   - linux
